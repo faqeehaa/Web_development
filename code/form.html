@@ -19,7 +19,7 @@
       text-align: center;
     }
     input[type=phone], select {
-      width: 80%;
+      width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
       display: inline-block;
@@ -48,16 +48,6 @@
       box-sizing: border-box;
       text-align: center;
     }
-    input[type=birthday], select {
-      width: 10%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      text-align: center;
-    }
     input[type=submit] {
       width: 100%;
       background-color: #4CAF50;
@@ -69,6 +59,12 @@
       cursor: pointer;
       text-align: center;
     }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+      text-align: center;
+      box-sizing: content-box;
+    } 
     div {
       border-radius: 5px;
       background-color: #f2f2f2;
@@ -76,7 +72,6 @@
       width: 50%;
       height: 100%;
       margin: auto;
-      text-align: center;
       
     }
     #heading {
@@ -86,29 +81,29 @@ text-align: center;
         text-align: center;
     } 
     body {
-  background-image: url("syaoran.jpg");
+  background-image: url("annie-spratt-pKpipZVVEC0-unsplash.jpg");
   background-repeat: no-repeat;
-  margin-right: 100px;
+  margin-right: 200px;
   background-attachment: fixed;
-  text-align: center;
 }
- 
-   
- .firm { 
-background-image: url("morvanic.jpg");
+.go {
+background-color: azure;
+}
+   .just {
+background-color: azure;
+   }  
+ .firm {
+background-color: azure; 
  }
- h1{
+ h3{
     padding: 5%;
-     border: 3px solid white;
-     text-align: center;
- } 
- 
+     border: 1px solid black;
+ }
     </style>
 <body> 
-    <div class="firm" style="color: white;"> 
-    <h1 id="heading"> <img>Log In</h1>
+    <div class="firm"> 
+    <h3 id="heading"> <img>Log In</h3>
      <form class="just"> 
-        <fieldset> 
     <table class="go">
         <tr>
             <td>
@@ -141,7 +136,7 @@ background-image: url("morvanic.jpg");
             </td>
         </tr>
         <tr>
-            <td >
+            <td>
                 Phone no:
             </td>
             <td>
@@ -155,7 +150,7 @@ background-image: url("morvanic.jpg");
         </select>
                 <input type="phone" placeholder="98480****" name="">
             </td>
-        </tr> 
+        </tr>
         <tr>
         <td>
             Gender:
@@ -172,9 +167,7 @@ background-image: url("morvanic.jpg");
                 <input type="Submit" value="Submit" name="">
             </td>
         </tr>
-    </table> 
-</fieldset>
-</form>
+    </table> </form>
     </div>
 </body>
 </html>
