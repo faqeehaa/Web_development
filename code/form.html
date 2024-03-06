@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+</head>
+
+<style>
+     
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    input[type=phone], select {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    input[type=Email], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    input[type=password], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    input[type=birthday], select {
+      width: 10%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      text-align: center;
+      
+    }
+    #heading {
+text-align: center;
+    }
+    #para {
+        text-align: center;
+    } 
+    body {
+  background-image: url("syaoran.jpg");
+  background-repeat: no-repeat;
+  margin-right: 100px;
+  background-attachment: fixed;
+  text-align: center;
+}
+ 
+   
+ .firm { 
+background-image: url("morvanic.jpg");
+ }
+ h1{
+    padding: 5%;
+     border: 3px solid white;
+     text-align: center;
+ } 
+ 
+    </style>
+<body> 
+    <div class="firm" style="color: white;"> 
+    <h1 id="heading"> <img>Log In</h1>
+     <form class="just"> 
+        <fieldset> 
+    <table class="go">
+        <tr>
+            <td>
+                First Name:
+            </td>
+            <td>
+                <input type="text"name="fname" placeholder="First Name">
+            </td>
+        </tr>
+        <br>
+      <tr>
+            <td>Last Name</td>
+            <td>
+                <input type="text" name="lname" placeholder="Last Name">
+            </td>
+        </tr>
+        <br>
+       <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" name="" placeholder="Password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="Email" name="" placeholder="Email">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Phone no:
+            </td>
+            <td>
+            <select>
+                <option>+92 </option>
+                <option>+977 </option>
+                <option>+242 </option>
+                <option>+268 </option>
+                <option>+212</option> 
+                <option>+998</option>
+        </select>
+                <input type="phone" placeholder="98480****" name="">
+            </td>
+        </tr> 
+        <tr>
+        <td>
+            Gender:
+        </td>
+        <td>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+        </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <input type="Submit" value="Submit" name="">
+            </td>
+        </tr>
+    </table> 
+</fieldset>
+</form>
+    </div>
+</body>
+</html>
