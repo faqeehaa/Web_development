@@ -1,0 +1,24 @@
+ body {
+    font-family: 'poppins',sans-serif;
+background-color:rgb(219, 226, 189);
+color:white;
+background-image: url(jj-ying.jpg);
+max-width: 100%;
+}
+table, th, td {
+  border: 3px solid white;
+  color: white;
+}
+div {
+ background-color: darkgray;
+ margin: auto;
+ width: 60%;
+ border: 5px solid black;
+ padding: 10px;
+ 
+ 
+}
+
+  
+ 
+ 

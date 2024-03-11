@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css ">
+    <title>Form </title>
+    <style>
+        body {
+background-image: url(syaoran.jpg);
+      padding: 10px;
+      width: 100%;
+      height: 600px;
+      margin: auto;
+      text-align: center;
+        }
+        #heading {
+             border: 6px;
+              border-style: solid;
+              border-radius: 8px;
+              padding: 5px;
+              color: aliceblue;
+              text-align: center;
+            }
+        div {
+    background-image: url(morvanic.jpg);
+    border: 6px;
+    border-style: solid;
+    color: white;
+    padding: 10px;
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      text-align: center;
+      border-radius: 5px;
+ /*background-color: #f2f2f2; 
+  padding: 20px;*/
+        }
+        .text {
+            background: url(smile.jpg) ;
+             border: 2px solid rgb(244, 242, 242);
+             /* margin: auto; */
+             margin-bottom: 10px;
+            width: 60%;
+           border: 3px solid #f7f9f4;
+            padding: 8px;
+        }
+        .submit{
+            background-color: chartreuse;
+            float: inline-end;
+            float:right;
+            margin: 8px;
+            padding:auto;
+        }
+       
+    </style>
+</head> 
+<body> 
+    <div> 
+    <h1 id="heading">Log In</h1>
+     <form class="just"> 
+       
+    <table>
+        <tr>
+            <td>
+                First Name:
+            </td>
+            <td class="text">
+                <input type="text"name="fname" placeholder="First Name">
+            </td>
+        </tr>
+        <br>
+      <tr>
+            <td>Last Name</td>
+            <td class="text">
+                <input type="text" name="lname" placeholder="Last Name">
+            </td>
+        </tr>
+        <br>
+       <tr>
+            <td>Password</td>
+         <td class="text">
+                <input type="password" name="" placeholder="Password">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td class="text"> 
+                <input type="Email" name="" placeholder="Email"  opacity: 0.5;>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Phone no:
+            </td>
+            <td class="text">
+                 
+             <select>
+                <option>+92 </option>
+                <option>+977 </option>
+                <option>+242 </option>
+                <option>+268 </option>
+                <option>+212</option> 
+                <option>+998</option>
+            </select>
+
+                <input type="phone" placeholder="98480****" name="">
+            </td>
+        </tr> 
+        <tr>
+        <td>
+            Gender:
+        </td>
+        <td>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+        </td>
+        </tr>
+        
+        <tr class="submit">
+            <td>
+                <input type="Submit" value="Submit" name="" >
+            </td>
+        </tr>
+    </table> 
+ 
+</form>
+    </div>
+</body>
+</html>

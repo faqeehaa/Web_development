@@ -1,0 +1,38 @@
+ 
+    body { 
+    font-family: 'poppins',sans-serif;
+    }
+    .water {
+        width: 1400px;
+ 
+        margin: 0 auto;
+         }
+        h1 {
+            border: 0cap;
+            background-color: #cdcdcd;
+            text-align: center;
+            padding: 15px 0px;
+            }
+    section.in,section.go { 
+         border: 5px #070000;
+        background-color: rgb(173, 217, 230);
+        text-align: center;
+    padding: 10px;
+    }
+    .in {
+        border: 5px rgb(3, 3, 3);
+        border-radius: 8px; 
+        border-style: double;
+        margin-bottom: 40px;
+    }
+    .go {
+        border: 5px;
+        border-color: #090909;
+        border-radius: 8px;
+        border-style: solid;
+    }
+    section h1 {
+        text-transform: uppercase;
+        color: #444;
+    }
+ 
