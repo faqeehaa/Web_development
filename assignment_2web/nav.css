@@ -1,0 +1,23 @@
+div{
+    background-color: black;
+    height: 20vh;
+    width: auto;
+}
+@media only screen and (max-width: 600px) {
+    div {
+      background-color: lightblue;
+    }
+  }
+  nav{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  ul{
+    display: flex;
+    text-decoration: none;
+    
+  }
+  ul li{
+    padding: 0px 5px ;
+    text-decoration: none;
+  }
