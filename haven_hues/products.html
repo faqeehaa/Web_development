@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetics</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+	background: rgb(144, 138, 138);
+	font-family: 'Montserrat', sans-serif;
+}
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 5% auto;
+}
+.product-area {
+	width: 30%;
+	margin-bottom: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 25px;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+}
+.img-area img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.product-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0
+}
+.product-overlay:hover {
+	opacity: 0.9;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: opacity 0.5s ease;
+}
+.overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.btn-1 {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #e74c3c;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn-2 {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.info-area {
+	padding: 10px 20px;
+	text-align: center;
+	background: #000;
+}
+.info-area h3 {
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: 'Bebas Neue', sans-serif;
+}
+.rating {
+	margin-bottom: 10px;
+}
+.rating span {
+	color: #fff;
+}
+.checked {
+	color: orange !important;
+}
+.product-price {
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+	.product-area {
+		width: 48%;
+	}
+}
+@media (max-width: 576px) {
+	.product-area {
+		width: 100%;
+	}
+}
+
+
+
+/* reviews css */ 
+section {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+.section-header{
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.section-header:after{
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    background: #fff;
+}
+.section-header span {
+	display: block;
+	font-size: 15px;
+	font-weight: 300;
+}
+.testimonials{
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile{
+    margin-bottom: 30px;
+    text-align: center;    
+}
+.img-area {
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	/* border: 7px solid blueviolet; */
+}
+.content{
+    font-size: 18px;
+}
+.content p {
+	text-align: justify;
+}
+.content p span {
+	font-size: 48px;
+	margin-right: 20px;
+    color: blueviolet;
+}
+.socials i {
+	margin-right: 25px;
+}
+.bio h4 {
+	font-family: 'Berkshire Swash', cursive;
+}
+/* .carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: blueviolet;
+} */
+   
+
+  </style>
+</head>
+<body>
+    
+  <div class="wrapper">
+		<div class="product-area">
+
+			<div class="img-area">
+				<img alt="Product 1" src="img13.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            			<a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="info-area">
+				<h3> Essence Eyeshadow Pallete<br>The Nude Edition</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star"></span> 
+					<span class="fa fa-star"></span>					
+				</div>
+				<div class="product-price">
+					$19.99
+				</div>
+			</div>
+		</div>
+
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img12.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> Essence LongLasting Mascara</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$24.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img11.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> BOBI BROWN<br>Long Event wear Foundation</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
+				</div>
+				<div class="product-price">
+					$39.00
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img9.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>CLIMAX<br>LongLaasting Mascara </h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$9.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img8.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> Essence<br>Blush Pallete</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$9.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img7.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> LI JIHAAM<br>Dr. Care Serum</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+
+    <div class="wrapper">
+		<div class="product-area">
+
+			<div class="img-area">
+				<img alt="Product 1" src="img6.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            			<a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="info-area">
+				<h3> Essence Eyeshadow Pallete</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star checked"></span> 
+					<span class="fa fa-star"></span> 
+					<span class="fa fa-star"></span>					
+				</div>
+				<div class="product-price">
+					$19.99
+				</div>
+			</div>
+		</div>
+
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img5.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3>PPOWER Lip Liquid Lip Glooss</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$24.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img4.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> ARRESISTIBLE<br>GUVECHY Perfume</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
+				</div>
+				<div class="product-price">
+					$39.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img3.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> Maybelline SKY HIGH LongLasting Mascara</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$12.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img2.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> BURBERRY Full Coverage Contour</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$9.99
+				</div>
+			</div>
+		</div>
+		<div class="product-area">
+			<div class="img-area">
+				<img alt="" src="img1.jpg">
+				<div class="product-overlay">
+					<div class="overlay">
+						<a class="btn-1" href="#">Add to Cart</a> 
+            <a class="btn-2" href="#">View Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="info-area">
+				<h3> Rare beauty LongLasting Lip Glooss</h3>
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span> 
+          <span class="fa fa-star"></span>
+				</div>
+				<div class="product-price">
+					$29.99
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Reviews html -->
+
+
+	<section>
+
+        <div class="container">
+            <h1 class="section-header">Client Review <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span></h1>
+            <div class="testimonials">
+                
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="single-item">
+                          <div class="row">
+
+                              <div class="col-md-5">
+
+                                  <div class="profile">
+                                      <div class="img-area">
+                                          <img src="suha.jpg" alt="">
+                                      </div>
+                                      <div class="bio">
+                                          <h2> Suha Shakir</h2>
+                                          <h4> Student</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="content">
+                                      <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                      <p class="socials">
+                                          <i class="fa fa-twitter"></i>
+                                          <i class="fa fa-behance"></i>
+                                          <i class="fa fa-pinterest"></i>
+                                          <i class="fa fa-dribbble"></i>
+                                          <i class="fa fa-vimeo"></i>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="single-item">
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <div class="profile">
+                                      <div class="img-area">
+                                          <img src="beeeni.jpg" alt="">
+                                      </div>
+                                      <div class="bio">
+                                          <h2> Beenish Abaid</h2>
+                                          <h4>psychologist</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="content">
+                                      <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                      <p class="socials">
+                                          <i class="fa fa-twitter"></i>
+                                          <i class="fa fa-behance"></i>
+                                          <i class="fa fa-pinterest"></i>
+                                          <i class="fa fa-dribbble"></i>
+                                          <i class="fa fa-vimeo"></i>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="single-item">
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <div class="profile">
+                                      <div class="img-area">
+                                          <img src="minahil.jpg" alt="">
+                                      </div>
+                                      <div class="bio">
+                                          <h2> Minahil Dar</h2>
+                                          <h4>Graphic Designer</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="content">
+                                      <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                      <p class="socials">
+                                          <i class="fa fa-twitter"></i>
+                                          <i class="fa fa-behance"></i>
+                                          <i class="fa fa-pinterest"></i>
+                                          <i class="fa fa-dribbble"></i>
+                                          <i class="fa fa-vimeo"></i>
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="shamma.jpg" alt="">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>  Shamma Khalid</h2>
+                                        <h4> Lecturer</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                    <p class="socials">
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-behance"></i>
+                                        <i class="fa fa-pinterest"></i>
+                                        <i class="fa fa-dribbble"></i>
+                                        <i class="fa fa-vimeo"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button> -->
+
+                  <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button> -->
+                </div>
+                
+            </div>
+        </div>
+    </section> 
+    
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

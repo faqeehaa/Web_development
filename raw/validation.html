@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+    body{
+        background-color: darkgrey;
+    }
+  .error {
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<form id="myForm" onsubmit="return validateForm()">
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <span id="emailError" class="error"></span><br>
+  
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <span id="passwordError" class="error"></span><br>
+  
+  <label for="text">Text:</label><br>
+  <input type="text" id="text" name="text"><br>
+  <span id="textError" class="error"></span><br>
+  
+  <label for="number">Number:</label><br>
+  <input type="number" id="number" name="number"><br>
+  <span id="numberError" class="error"></span><br>
+  
+  <label for="date">Date:</label><br>
+  <input type="date" id="date" name="date"><br>
+  <span id="dateError" class="error"></span><br>
+  
+  <label for="checkbox">Checkbox:</label><br>
+  <input type="checkbox" id="checkbox" name="checkbox"><br>
+  <span id="checkboxError" class="error"></span><br>
+  
+  <label for="radio">Radio Button:</label><br>
+  <input type="radio" id="radio" name="radio"><br>
+  <span id="radioError" class="error"></span><br>
+  
+  <label for="dropdown">Dropdown: City Name </label><br>
+  <select id="dropdown" name="dropdown">
+    <option value=""></option>
+    <option value="option1">Lahore</option>
+    <option value="option2">Islamabad</option>
+    <option value="option3">Karachi</option>
+  </select><br>
+  <span id="dropdownError" class="error"></span><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var text = document.getElementById("text").value;
+  var number = document.getElementById("number").value;
+  var date = document.getElementById("date").value;
+  var checkbox = document.getElementById("checkbox").checked;
+  var radio = document.getElementById("radio").checked;
+  var dropdown = document.getElementById("dropdown").value;
+  
+  var emailError = document.getElementById("emailError");
+  var passwordError = document.getElementById("passwordError");
+  var textError = document.getElementById("textError");
+  var numberError = document.getElementById("numberError");
+  var dateError = document.getElementById("dateError");
+  var checkboxError = document.getElementById("checkboxError");
+  var radioError = document.getElementById("radioError");
+  var dropdownError = document.getElementById("dropdownError");
+  
+  var isValid = true;
+  
+  // Email validation
+  if (!email.includes("@")) {
+    emailError.innerHTML = "Email must contain @ symbol";
+    isValid = false;
+  } else {
+    emailError.innerHTML = "";
+  }
+  
+  // Password validation
+  if (!password.match(/[a-z]/) || !password.match(/[A-Z]/) || !password.match(/[0-9]/)) {
+    passwordError.innerHTML = "Password must contain at least one lowercase letter, one uppercase letter, and one digit";
+    isValid = false;
+  } else {
+    passwordError.innerHTML = "";
+  }
+  
+  // Text validation
+  if (text.length < 3) {
+    textError.innerHTML = "Text must be at least 3 characters long";
+    isValid = false;
+  } else {
+    textError.innerHTML = "";
+  }
+  
+  // Number validation
+  if (isNaN(number)) {
+    numberError.innerHTML = "Please enter a valid number";
+    isValid = false;
+  } else {
+    numberError.innerHTML = "";
+  }
+  
+  // Date validation (optional)
+  if (date === "") {
+    dateError.innerHTML = "Please select a date";
+    isValid = false;
+  } else {
+    dateError.innerHTML = "";
+  }
+  
+  // Checkbox validation (optional)
+  if (!checkbox) {
+    checkboxError.innerHTML = "Checkbox must be checked";
+    isValid = false;
+  } else {
+    checkboxError.innerHTML = "";
+  }
+  
+  // Radio button validation (optional)
+  if (!radio) {
+    radioError.innerHTML = "Radio button must be selected";
+    isValid = false;
+  } else {
+    radioError.innerHTML = "";
+  }
+  
+  // Dropdown validation (optional)
+  if (dropdown === "") {
+    dropdownError.innerHTML = "Please select an option from the dropdown";
+    isValid = false;
+  } else {
+    dropdownError.innerHTML = "";
+  }
+  
+  return isValid;
+}
+</script>
+
+</body>
+</html>

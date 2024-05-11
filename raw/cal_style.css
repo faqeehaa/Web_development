@@ -1,0 +1,31 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: teal;
+}
+header{
+    color: darkgray;
+    text-align: center;
+}
+.calculator {
+    width: 300px;
+    background-color: white;
+    margin: 50px 495px;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 15px;
+}
+input[type="button"] {
+    width: 63px;
+    height: 52px;
+    font-size: 20px;
+    margin: 3px;
+    cursor: pointer;
+}
+input[type="text"] {
+    width: 97%;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}

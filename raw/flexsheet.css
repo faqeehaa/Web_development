@@ -1,0 +1,38 @@
+body {
+
+}
+#container {
+background-color: blanchedalmond;
+display: flex;
+height: 100px;
+width: 400px;
+justify-content:flex-end;
+/* flex-direction: column; */
+flex-wrap: wrap; 
+}
+.c1 {
+    background-color: aquamarine;
+    height: 20px;
+    width: 20px;
+     
+}
+.c2 {
+    background-color: aqua;
+    height: 20px;
+    width: 20px;
+}
+.c3 {
+    background-color: rgb(25, 124, 124);
+    height: 20px;
+    width: 20px;
+}
+.c4 {
+    height: 20px;
+    width: 20px;
+    background-color: cadetblue;
+}
+.c5 {
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+}

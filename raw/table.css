@@ -1,0 +1,11 @@
+table, th, td {
+    border: 3px solid white;
+    color: white;
+}
+.diff{
+    background-color: brown;
+    text-align: center;
+}
+#seq{
+margin: 150px;
+}
